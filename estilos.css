@@ -1,0 +1,55 @@
+body{
+	margin:0 auto; /* centralizo minha pagina dentro da minha janela*/
+	width:960px; /*definindo a largura da janela - altura nao configura*/
+	background-color:#FFF; /* cor branca de fundo*/
+	overflow:scroll; /* obrigar a presença da barra de rolagem*/
+	overflow-x:hidden; /* barra de rolagem só aparece no y o x fica oculto*/
+	background-image:url(imgs/fundo_topo.jpg); /*pega a imagem preta e...*/
+	background-repeat:repeat-x; /* repete ela no fundo apenas no eixo x - Horizontalmente*/
+}
+
+header{
+	height: 122px;
+}
+
+#logo_topo{ /* id do topo.php */
+	width:301px;
+	height:111px;
+	background-color:#000; /* cor preta*/
+	background-image:url(imgs/logo.svg);
+	float:left; /* mandou imagem do carro para esquerda*/
+}
+
+#menu{ /*id do menu em topo.php*/
+	width:659px; /* tamanho da imagem 960-301 = 659*/
+	height:111px;
+	background-color:#000;
+	display:table-cell; /* deixa os menus como celulas de tabela*/
+	vertical-align:middle;
+	padding:0px 0px 0px 259px; /* posicionamento dos menus */
+}
+
+.btmenu{ /* criando uma classe*/
+	text-decoration:none; /* remove o sublinhado do link*/
+	display:table-cell; 
+	width:100px; /* a largura de todos os menus linkados a classe*/
+	height:30px;
+	margin:0px; /* por segurança*/
+	padding:1px 5px 1px 5px;
+	background-color:#222; /*fundo cinza do btn*/
+	text-align:center; /*alinhamento  horizontal do texto dentro do menu - meio*/
+	vertical-align:middle; /*alinhamento  vertical do texto dentro do menu - meio*/
+	border-radius:10px; /* arrendondamento das bordas do botão*/
+	color:#bbb; /* cinza bem clarinho - cor da letra*/
+	font-family:Arial; /* fonte*/
+	font-size:10px; /* tamanho da fonte*/
+	cursor:pointer; /* ao mouse passar por cima vire a luvinha*/
+
+}
+
+.btmenu:hover{ /* quando o mouse passar por cima do btn*/
+	background-color:#c22; /* cor do fundo - vermelho*/
+	color:#FFF;/*cor do texto - branco */
+}
+
+
