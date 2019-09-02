@@ -1,3 +1,25 @@
+<script src="jquery-3.4.1.min.js"></script>
+<script>
+	var slides=["#s1","#s2","#s3","#s4","#s5"];
+	slideatual=0; /*indica qual slide a ser exibido*/
+	slidemax=4;
+	tempo=10000; /*ml segudos == 10 s*/
+	
+	$(document).ready(function(){ /*SE a pagina estiver carregada comece...*/
+		$(slides[slideatual]).fadeTo(1000,1); /*1 segundo e exiba- 1 = exibir - 0 = ocultar*/
+		setInterval(troca,tempo);	
+		function troca(){
+			$(slides[slideatual]).fadeTo(1000,0);
+			slideatual++;
+			if(slideatual > slidemax){
+				slideatual=0;
+			}
+			$(slides[slideatual]).fadeTo(1000,1);
+		}
+	});
+	
+</script>
+
 <img id="s1" src="slides/slide1.jpg"/>
 <img id="s2" src="slides/slide2.jpg"/>
 <img id="s3" src="slides/slide3.jpg"/>

@@ -13,20 +13,23 @@ header{
 }
 
 #logo_topo{ /* id do topo.php */
-	width:301px;
+	width:491px;
 	height:111px;
-	background-color:#000; /* cor preta*/
+	position: absolute; left: 100px;
+	background-color:#DEE3DB; /* cor preta*/
 	background-image:url(imgs/logo.svg);
 	float:left; /* mandou imagem do carro para esquerda*/
+	
 }
 
 #menu{ /*id do menu em topo.php*/
-	width:659px; /* tamanho da imagem 960-301 = 659*/
-	height:111px;
-	background-color:#000;
+	width:491px; /* tamanho da imagem 960-301 = 659*/
+	height:70px;
+	background-color:#DEE3DB;
 	display:table-cell; /* deixa os menus como celulas de tabela*/
 	vertical-align:middle;
-	padding:0px 0px 0px 259px; /* posicionamento dos menus */
+	padding:0px 0px 0px 20px; /* posicionamento dos menus */
+	position: absolute; left: 700px; top: 40px;
 }
 
 .btmenu{ /* criando uma classe*/
@@ -36,20 +39,34 @@ header{
 	height:30px;
 	margin:0px; /* por segurança*/
 	padding:1px 5px 1px 5px;
-	background-color:#222; /*fundo cinza do btn*/
+	background-color:rgb(29, 57, 151); /*fundo cinza do btn*/
 	text-align:center; /*alinhamento  horizontal do texto dentro do menu - meio*/
 	vertical-align:middle; /*alinhamento  vertical do texto dentro do menu - meio*/
 	border-radius:10px; /* arrendondamento das bordas do botão*/
 	color:#bbb; /* cinza bem clarinho - cor da letra*/
 	font-family:Arial; /* fonte*/
-	font-size:10px; /* tamanho da fonte*/
+	font-size:12px; /* tamanho da fonte*/
 	cursor:pointer; /* ao mouse passar por cima vire a luvinha*/
 
 }
 
 .btmenu:hover{ /* quando o mouse passar por cima do btn*/
-	background-color:#c22; /* cor do fundo - vermelho*/
+	background-color:rgb(22, 155, 40); /* cor do fundo - vermelho*/
 	color:#FFF;/*cor do texto - branco */
 }
 
+#slider{
+	background-color: #e7e7e7; /*cinza*/
+	width: 10px;
+	height: 10px;
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	left: 0px;
+}
 
+#s1,#s2,#s3,#s4,#s5{
+	 opacity: 0;
+	position: absolute;
+}
